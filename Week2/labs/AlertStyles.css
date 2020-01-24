@@ -1,5 +1,6 @@
 #mainHeader{
     text-align: center;
+    text-shadow: lightgray;
 }
 
 #real-alert{
@@ -12,13 +13,18 @@
     width: 500px;
 }
 #test-only{
+    /*adding an image to the background of the text*/
     background-image:url("rainbow.jpg");
     background-color: teal;
+    /*stretching the image i used so it fits properly*/
     background-size: 50px 50px;
     color: yellow;
-    display: block;
-    width: 300px;
+    display: block; /*  adding a block around my text */
+    width: 300px; /* setting the width of the block*/
     border: solid aqua 10px;
     font-size: 30px;
+}
+body{
+    background-color: #3ae682;
 }
 

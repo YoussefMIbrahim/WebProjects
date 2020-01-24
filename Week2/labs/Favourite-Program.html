@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Favourite program so far</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+<h1 class="jumbotron">CSS Ticketing</h1>
+
+<p>I made this program during my Java class, with the idea of what i would need if i were to make a ticketing app for my
+club.It's a fairly simple app, lets you input a bunch if fields for a problem with a pc, and adds them to a database
+that you can later edit. While I doubt this is ever gonna see use, it's still my favourite program</p>
+
+<pre><code>
+    private void rightClickMenu(){
+        // creating a new popup menu called rightclickmenu
+        JPopupMenu rightClickMenu = new JPopupMenu();
+        // creating new menu items to add to the right lick menu
+        JMenuItem deleteMenuItem = new JMenuItem("Delete Row");
+        JMenuItem editMenuItem = new JMenuItem("View/Edit");
+        // adding the items to the right click menu
+        rightClickMenu.add(deleteMenuItem);
+        rightClickMenu.add(editMenuItem);
+        // setting the right click menu to the ticket table
+        ticketTable.setComponentPopupMenu(rightClickMenu);
+
+        // clicking either delete or view/edit will call other methods
+        deleteMenuItem.addActionListener(e -> {
+            // calling a method that deletes a row in the table
+            deleteTableRow();
+
+        });
+
+        editMenuItem.addActionListener(e -> {
+            // calling a method that opens a new gui
+            newFramePopup();
+
+        });
+    } (I forgot how much code was in this program)
+</code></pre>
+
+<a href="https://github.com/YoussefMIbrahim/CSS-Ticketing-">Here's the GitHub link for it</a>
+</body>
+</html>
