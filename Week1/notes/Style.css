@@ -1,0 +1,36 @@
+p{
+    color: blue;
+    font-size: 30px;
+}
+h1{
+    color: deeppink;
+    text-align: center;
+}
+body{
+    background-color:orange;
+    font-family: Perpetua, Serif;
+}
+a{
+    background-color: lightgreen;
+    text-decoration: none;
+}
+#random-p{
+    background-color: purple;
+    font-family: Arial,Serif;
+}
+.red-list-items{
+    color: grey;
+    font-size: 30px;
+}
+#listItem-green{
+    color: green;
+    font-size: 30px;
+}
+#listItem-Yellow{
+    color: yellow;
+    font-size: 30px;
+}
+#overall-list{
+    border: 5px white solid;
+    margin: 5px;
+}

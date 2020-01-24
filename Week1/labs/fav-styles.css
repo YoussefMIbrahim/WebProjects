@@ -1,0 +1,44 @@
+#main-title{
+    color: magenta;
+    text-align: center;
+}
+body{
+    background-color: grey;
+}
+.favorite-section{
+    border: black 5px solid;
+    margin: 5px;
+
+}
+.section-header{
+    color: yellow;
+}
+#favorite-movie-title{
+    color: red;
+}
+#most-favorite-food{
+    color: red;
+}
+#favorite-music-name{
+    color: red;
+}
+.favorite-image{
+    border-radius: 8px;
+    margin: 10px;
+}
+th{
+    margin: 20px;
+    color: lightcoral;
+}
+td{
+    margin: 20px;
+    color: aquamarine;
+}
+table{
+    border-spacing: 20px;
+}
+#my-name{
+    color: yellow;
+    text-shadow: aquamarine;
+    text-align: center;
+}

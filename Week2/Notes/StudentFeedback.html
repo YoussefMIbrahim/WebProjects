@@ -8,11 +8,25 @@
 <!--    this is the bootstrap link that makes it work wit my page-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="feedback-styles.css">
+<!--    this is another CSS sheet from google fonts for a specific font-->
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Bitter&display=swap" rel="stylesheet">
 </head>
+
 <body class = "m-3">
 <div class="jumbotron"><h1>Please provide us with some feedback</h1></div>
-<form class = "mt-5">
+<div class="row">
 
+    <div class="col-lg-5"> <!--- start of first column and the size of it -->
+        <div>
+            <img src="feedback-cat.jpg" alt="this is a cat giving feedback " id="Cat-img">
+            <p>you're comments are important to us and stuff please give us the feedback we would love it</p>
+        </div>
+
+    </div><!--- end of first column -->
+
+
+    <div class = "cold-md-7"> <!--- start of second column -->
+    <form class = "mt-5">
     <label for="name">Name:</label><br>
     <input type="text" id="name" class="form-control"><br>
 
@@ -34,8 +48,9 @@
 <!--    getting predefined class from bootstrap (there are many)-->
     <input type="submit" class="btn btn-primary mt-2"><br>
 
-
 </form>
+</div> <!---end of second column -->
+</div><!--- end of row-->
 
 
 </body>

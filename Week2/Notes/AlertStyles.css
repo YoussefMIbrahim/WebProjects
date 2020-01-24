@@ -1,0 +1,21 @@
+#mainHeader{
+    text-align: center;
+}
+
+#real-alert{
+    background-color: black;
+    color: red;
+    display: block;
+    font-size: 40px;
+    border: solid orange 6px;
+    font-weight: bold;
+    width: 500px;
+}
+#test-only{
+    background-color: teal;
+    color: yellow;
+    display: block;
+    width: 200px;
+    border: solid aqua 10px;
+}
+

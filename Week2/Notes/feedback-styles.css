@@ -1,0 +1,16 @@
+.skill{
+    color: grey;
+}
+.jumbotron{
+    background-color: #3ae682;
+    font-family: 'Bangers',cursive;
+
+}
+body{
+    background-color: rgba(147, 242, 255, 0.97);
+    font-family: 'Bitter', serif;
+
+}
+h1{
+    text-align: center;
+}
