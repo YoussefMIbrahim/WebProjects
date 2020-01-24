@@ -12,10 +12,13 @@
     width: 500px;
 }
 #test-only{
+    background-image:url("rainbow.jpg");
     background-color: teal;
+    background-size: 50px 50px;
     color: yellow;
     display: block;
-    width: 200px;
+    width: 300px;
     border: solid aqua 10px;
+    font-size: 30px;
 }
 
