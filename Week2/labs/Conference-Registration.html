@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conference Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Bitter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Conference-styles.css" type="text/css">
+
+</head>
+<body class="m-3">
+
+<h1 class="jumbotron">Conference registration form</h1>
+<form class="mt-5">
+    <label for="name">Enter your name:</label>
+    <input id="name" type="text" required class="form-control">
+
+    <br><label for="password">Enter your password:</label>
+    <input id="password" type="password" required class="form-control">
+
+    <br><label for="email">Enter your Email:</label>
+    <input type="email" id="email" required class="form-control">
+
+    <br><label for="size">What size T-shirt</label>
+    <select name="" id="size" required>
+        <option value="">Small</option>
+        <option value="">Medium</option>
+        <option value="">Large</option>
+    </select>
+
+    <br><label for="date">Enter Date of Birth:</label>
+    <input type="date" id="date" required class="form-control">
+
+    <p>Do you want to receive an Email from the conference sponsors?</p>
+    <div class="form-check">
+        <input type="radio" name="receive-email" id="yes" class="form-check-input">
+        <label for="yes" class="form-check-label">Yes</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" name="receive-email" id="no" class="form-check-input">
+        <label for="no" class="form-check-label">No</label>
+    </div>
+    <br><p>When are you attending?</p>
+    <label for="morning">Morning</label><input type="checkbox" id="morning" class="form-control-input">
+    <label for="afternoon">Afternoon</label><input type="checkbox" id="afternoon" class="form-control-input">
+
+    <br><label for="requests">Any special requests?</label>
+    <br><textarea name="" id="requests" cols="70" rows="7" class="form-control"></textarea>
+
+    <br><input type="submit">
+</form>
+</body>
+</html>
