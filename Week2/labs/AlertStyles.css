@@ -14,7 +14,7 @@
 }
 #test-only{
     /*adding an image to the background of the text*/
-    background-image:url("rainbow.jpg");
+    background-image:url("../images/rainbow.jpg");
     background-color: teal;
     /*stretching the image i used so it fits properly*/
     background-size: 50px 50px;
