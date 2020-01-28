@@ -1,5 +1,5 @@
 body{
-    background-color: #faff96;
+    background-color: #A65424;
 }
 h1{
     font-size: 80px;
@@ -11,6 +11,17 @@ h1{
 #cat2{
     height: 300px;
 }
-.lab-links{
+.lab-links {
     font-size: 20px;
+    color: cornflowerblue !important;
+}
+#links a:hover, a:visited, a:link, a:active{
+    text-decoration: none !important ;
+}
+
+#jumbo{
+    background-color: #8C545E;
+}
+.dropdown-item:hover{
+    background-color: #F2D6B3;
 }
