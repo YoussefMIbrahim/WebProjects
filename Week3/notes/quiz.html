@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <p>What is the capital of Wisconsin</p>
+
+    <button class="button">Bayfield</button>
+    <button class="button" id="correct-answer">Madison</button>
+    <button class="button">Milwaukee</button>
+
+<!--    empty tag that we'll fill later if the correct asnwer is given-->
+
+    <p id="result"></p>
+
+<script>
+
+    // testing things that may or may not work
+
+    let answerButton = document.querySelectorAll('.button');
+
+    let result = document.querySelector('#result');
+
+    answerButton.addEventListener('click', function () {
+
+        result.innerHTML = 'correct answer!'
+
+    })
+
+
+</script>
+
+</body>
+</html>
