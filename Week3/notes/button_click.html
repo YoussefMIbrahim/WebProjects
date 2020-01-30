@@ -5,22 +5,22 @@
 </head>
 <body>
 
-    <button id="1" onclick="getMeThisFuckingIDPLEASE(this.id)">Click here!</button>
+    <button id="1">Click here!</button>
 
 <script>
 
-    let button = document.querySelector('button')
+    let button = document.querySelector('button');
     let counter = 0;
-function getMeThisFuckingIDPLEASE (id){
-        button.addEventListener('click',function() {
-            alert(id)
-            button.innerHTML = 'please work'
-            if (counter > 0){
-                button.innerHTML = 'The button has been clicked again'
-            }
-            counter++
-        })
-    }
+
+    button.addEventListener('click',function() {
+
+        button.innerHTML = 'please work';
+        if (counter > 0){
+            button.innerHTML = 'The button has been clicked again'
+        }
+        counter++
+    })
+
 </script>
 
 </body>

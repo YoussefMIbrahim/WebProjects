@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title></title>
+    <title>Button Click</title>
 </head>
 <body>
 
-    <p>What is the capital of Wisconsin</p>
-
-<!--    made it so on click the buttons will give their ids to a function-->
-    <button class="button" onclick="pleaseWork(this.id)">Bayfield</button>
-    <button class="button" id="correct-answer" onclick="pleaseWork(this.id)">Madison</button>
-    <button class="button" onclick="pleaseWork(this.id)">Milwaukee</button>
-
-<!--    empty tag that we'll fill later if the correct asnwer is given-->
+    <p>What is the Captial of Wisconsin</p>
+    <button class="wrong-answer">Bayfield</button>
+    <button id="correct-answer">Madison</button>
+    <button class="wrong-answer">Milwaukee</button>
 
     <p id="result"></p>
-
 <script>
-    // this took me way too long to figure out, and i imagine it probably could've been done better
-    // testing things that may or may not work
-    // got a list of all the buttons wiht the button class
-    let answerButton = document.querySelectorAll('.button');
-    // got the tag with the result id so we can edit it later
+    let correctAnswerButton = document.querySelector('#correct-answer');
+
     let result = document.querySelector('#result');
-    // function that gets the id from the html (couldn't figure out a better way to do this)
-    function pleaseWork(id) {
-        // listener for the entire document
-        document.addEventListener('click', function (event) {
-            // checking if the event that hit this listener has the class button
-            if (event.target.classList.contains('button')) {
-                // looping through the list of buttons i have
-                for (var value of answerButton) {
-                    // checking the the button id matches the id i got from the function and changing the result tag
-                    if (id === 'correct-answer') {
-                        result.innerHTML = 'correct answer!'
-                    } else {
-                        result.innerHTML = 'false';
-                    }
-                }
-            }
-        });
-    }
+
+    let wrongAnswerButtons = document.querySelectorAll('.wrong-answer');
+
+    // this for each loops over the list and runs the function in it everytime
+    wrongAnswerButtons.forEach(function (wrongAnswerButton) {
+        // adding an event listener for the button and also creating the function?
+        wrongAnswerButton.addEventListener('click',function () {
+            result.innerHTML = 'Wrong answer. Try again?';
+            correctAnswerButton.style.background = 'white';
+        })
+    });
+
+    correctAnswerButton.addEventListener('click',function () {
+
+        result.innerHTML= 'Correct Answer';
+        correctAnswerButton.style.background = 'cyan'
+    })
+
+
 </script>
 
 </body>

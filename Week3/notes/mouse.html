@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Button Click</title>
+</head>
+<body>
+
+    <p id="mouse-me">Move the mouse over this message. Please</p>
+
+<script>
+
+    let message = document.querySelector('#mouse-me')
+
+    message.addEventListener('mouseover',function () {
+        message.innerHTML = 'Your mouse is on this message'
+    })
+
+    message.addEventListener('mouseout',function () {
+        message.innerHTML = 'Your mouse is not on this message'
+    })
+
+
+</script>
+
+</body>
+</html>
