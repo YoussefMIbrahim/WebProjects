@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Button Click</title>
+    <title>Mouse things</title>
 </head>
 <body>
 
     <p id="mouse-me">Move the mouse over this message. Please</p>
 
 <script>
-     var one = 1
-     var two = "2"
-     console.log('variable one is '+one)
-     console.log('variable two is '+two)
+     // var one = 1
+     // var two = "2"
+     // console.log('variable one is '+one)
+     // console.log('variable two is '+two)
+     //
+     // var answer = one+two;
+     // console.log(answer)
 
-     var answer = one+two;
-     console.log(answer)
+    let message = document.querySelector('#mouse-me');
 
-    let message = document.querySelector('#mouse-me')
-
-    let countMouse = 0
+    let countMouse = 0;
 
     message.addEventListener('mouseover',function () {
         countMouse ++;
         message.innerHTML = 'Your mouse has hovered over this message ' + countMouse + ' times'
-    })
+    });
 
     message.addEventListener('mouseout',function () {
         message.innerHTML = 'Your mouse is not on this message'
