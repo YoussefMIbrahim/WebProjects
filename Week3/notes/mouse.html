@@ -8,11 +8,21 @@
     <p id="mouse-me">Move the mouse over this message. Please</p>
 
 <script>
+     var one = 1
+     var two = "2"
+     console.log('variable one is '+one)
+     console.log('variable two is '+two)
+
+     var answer = one+two;
+     console.log(answer)
 
     let message = document.querySelector('#mouse-me')
 
+    let countMouse = 0
+
     message.addEventListener('mouseover',function () {
-        message.innerHTML = 'Your mouse is on this message'
+        countMouse ++;
+        message.innerHTML = 'Your mouse has hovered over this message ' + countMouse + ' times'
     })
 
     message.addEventListener('mouseout',function () {
