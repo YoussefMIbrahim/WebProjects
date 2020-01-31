@@ -33,7 +33,7 @@
                 let listItemTag = document.createElement('li'); // creating a list item
                 listItemTag.innerHTML = listItem; // setting the inner html of the list item to the value from the input
                 list.appendChild(listItemTag); // appending the tag with the value to the page
-                itemToAdd.innerHTML = ''
+                itemToAdd.value = '';
             }
         }else if (listItem.length > 50){
             alert("THIS INPUT IS ENTIRELY TOO LONG, TRY AGAIN WITH A MORE REASONABLE INPUT")

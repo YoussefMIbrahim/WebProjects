@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7f1c883-b05d-4c32-aebd-fe59691c93ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week3/labs/classRoster.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/notes/inputs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/labs/inputs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/index-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/labs/classRoster.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/labs/classRoster.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/labs/inputs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/labs/inputs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/notes/quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/notes/quiz.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <workItem from="1580275538115" duration="2317000" />
       <workItem from="1580332829539" duration="10874000" />
       <workItem from="1580412945193" duration="2494000" />
-      <workItem from="1580425863347" duration="8729000" />
+      <workItem from="1580425863347" duration="15037000" />
     </task>
     <servers />
   </component>

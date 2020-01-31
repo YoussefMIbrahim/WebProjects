@@ -76,6 +76,47 @@
         - remove all of the elements with the class="selected" from the list.
 
     */
+    let addButton = document.querySelector('#add-student');
+    let studentList = document.querySelector('#student-list');
+    let removeButton = document.querySelector('#remove-selected-students');
+
+
+    addButton.addEventListener('click',function () {
+
+        // selecting and getting the value form all the input fields
+        let studentName = document.querySelector('#student-name').value;
+        let studentId  = document.querySelector('#student-id').value;
+        let studentGpa = document.querySelector('#student-gpa').value;
+
+        if (studentName.length === 0){
+            alert('ENTER YOU NAME')
+        }else if (studentId === ''){
+            alert('ENTER THE STUDENT ID')
+        }else if (studentGpa === '' || studentGpa < 0 || studentGpa > 4){
+            alert('ENTER A VALID GPA')
+        }
+
+        let newListItem = document.createElement("li");
+        newListItem.innerHTML = `${studentName}, ID:${studentId}, GPA:${studentGpa}`;
+        newListItem.addEventListener('click', function () {
+            if (this.classList.contains('selected')){
+                this.setAttribute('class','')
+            }else {
+                this.classList.add('selected')
+            }
+        });
+        studentList.appendChild(newListItem)
+
+    });
+
+    removeButton.addEventListener('click', function () {
+        let itemsToRemove = document.querySelectorAll('.selected');
+        console.log(itemsToRemove);
+        itemsToRemove.forEach(function (item) {
+            item.remove(); // removing the selected item
+        })
+    })
+
 
 </script>
 
