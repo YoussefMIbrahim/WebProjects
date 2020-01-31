@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="tabStyle.css">
+</head>
+<body>
+
+
+    <h1>Favourite foods</h1>
+
+    <div id="tabs">
+
+    <button data-content-id = "pizza" class="tab-button">Pizza</button>
+    <button data-content-id = "cheesecake" class="tab-button">Cheesecake</button>
+    <button data-content-id = "sushi" class="tab-button">Sushi</button>
+
+    </div>
+
+    <div id="pizza" class="tab-content">Pizza is Awesome</div>
+    <div id="cheesecake" class="tab-content">Cheesecake is awesome</div>
+    <div id="sushi" class="tab-content">sushi is also awesome</div>
+
+
+<script>
+    let buttons = document.querySelectorAll('.tab-button');
+    let tabContents = document.querySelectorAll('.tab-content');
+
+    tabContents.forEach( function (divEl) {
+        divEl.style.display = 'none'
+    });
+
+    buttons.forEach( function (buttonElement) {
+        buttonElement.addEventListener('click' ,function () {
+
+            tabContents.forEach(function (divElement) {
+                divElement.style.display = 'none'
+            })
+            // getting the id for the button that triggered the event
+            let contentId = this.getAttribute('data-content-id')
+            // selecting the content for the div with that id
+            let tabContent = document.querySelector('#' + contentId)
+            tabContent.style.display = 'block' // making things visible in there
+        })
+    })
+
+</script>
+
+</body>
+</html>
