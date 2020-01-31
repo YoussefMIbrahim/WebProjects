@@ -79,7 +79,7 @@
     let addButton = document.querySelector('#add-student');
     let studentList = document.querySelector('#student-list');
     let removeButton = document.querySelector('#remove-selected-students');
-
+    let studentCount = document.querySelector("#student-count");
 
     addButton.addEventListener('click',function () {
 
@@ -87,34 +87,56 @@
         let studentName = document.querySelector('#student-name').value;
         let studentId  = document.querySelector('#student-id').value;
         let studentGpa = document.querySelector('#student-gpa').value;
+        let counter = document.querySelector("#student-list").children.length; //getting number of child elements under the list element
 
-        if (studentName.length === 0){
-            alert('ENTER YOU NAME')
-        }else if (studentId === ''){
-            alert('ENTER THE STUDENT ID')
-        }else if (studentGpa === '' || studentGpa < 0 || studentGpa > 4){
-            alert('ENTER A VALID GPA')
-        }
 
-        let newListItem = document.createElement("li");
-        newListItem.innerHTML = `${studentName}, ID:${studentId}, GPA:${studentGpa}`;
-        newListItem.addEventListener('click', function () {
-            if (this.classList.contains('selected')){
-                this.setAttribute('class','')
-            }else {
-                this.classList.add('selected')
+        let nameError = 'ENTER NAME';
+        let idError = 'ENTER A VALID ID';
+        let gpaError = 'ENTER A VALID GPA';
+        let errorAlert = '';
+        // this works. no further comments
+        if (studentName.length === 0 || studentId.length === 0 || (studentGpa === '' || studentGpa < 0 || studentGpa > 4)){
+            if (studentName.length === 0 ){
+                errorAlert += nameError + '\n';
             }
-        });
-        studentList.appendChild(newListItem)
-
+            if (studentId.length === 0){
+                errorAlert += idError+ '\n';
+            }
+            if (studentGpa < 0 || studentGpa > 4 || studentGpa.length ===0){
+                errorAlert += gpaError;
+            }
+            alert(errorAlert)
+        }else {
+            // creating a li
+            let newListItem = document.createElement("li");
+            // adding the html to the li
+            newListItem.innerHTML = `${studentName}, ID:${studentId}, GPA:${studentGpa}`;
+            // adding an event listener to the list item
+            newListItem.addEventListener('click', function () {
+                // checking if it already has the selected class and adding or removing that class accordingly
+                if (this.classList.contains('selected')) {
+                    this.setAttribute('class', '')
+                } else {
+                    this.classList.add('selected')
+                }
+            });
+            // adding the li to the html
+            studentList.appendChild(newListItem);
+            // setting the value to the amount of current students in the list
+            studentCount.innerHTML = `${counter + 1}`;
+        }
     });
-
+    // action listener for remove button
     removeButton.addEventListener('click', function () {
-        let itemsToRemove = document.querySelectorAll('.selected');
-        console.log(itemsToRemove);
-        itemsToRemove.forEach(function (item) {
+
+        let itemsToRemove = document.querySelectorAll('.selected'); // getting everything with the selected tag
+        itemsToRemove.forEach(function (item) { // looping over the items i wanna remove
             item.remove(); // removing the selected item
-        })
+        });
+        // getting the number of child elements under the list
+        let counter = document.querySelector("#student-list").children.length;
+        // getting number of child elements under the list element
+        studentCount.innerHTML = `${counter}`;
     })
 
 
