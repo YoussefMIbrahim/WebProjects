@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <p>Enter some text to add too the list</p>
+
+    <input type="text" id="save-list-item"><button id="add-button">add</button>
+    <button id="clear">Clear</button>
+
+    <ul id = "list">
+
+    </ul>
+
+<script>
+
+    let itemToAdd = document.querySelector('#save-list-item'); //list item i'm gonna be adding to the list
+    let list = document.querySelector('#list'); // getting the ul tag by id
+    let addButton = document.querySelector('#add-button'); //selector for the add button
+    let clearButton = document.querySelector('#clear'); // clear button selector
+
+    addButton.addEventListener('click', function () {
+        let listItem = itemToAdd.value; // getting the value form the input field
+
+        let counter = list.childNodes.length - 1;// getting the length of the list and removing one cause it's dumb
+        console.log(counter);
+
+        if (counter < 10) { // checking if list length is less than 10
+        let listItemTag = document.createElement('li'); // creating a list item
+        listItemTag.innerHTML = listItem; // setting the inner html of the list item to the value from the input
+        list.appendChild(listItemTag); // appending the tag with the value to the page
+        itemToAdd.innerHTML = ''
+        }
+
+
+    });
+
+    clearButton.addEventListener('click', function () {
+        list.innerHTML = '' // clearing the list 
+    })
+
+</script>
+</body>
+</html>
