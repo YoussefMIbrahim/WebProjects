@@ -3,8 +3,8 @@ console.log('hello world');
 let name = 'youssef';
 let todayTemp = 33;
 
-console.log(`My name is ${name} and today's temp is ${33}`)
-console.log(todayTemp)
+console.log(`My name is ${name} and today's temp is ${33}`);
+console.log(todayTemp);
 
 // function that checks if the given gpa is within the valid range
 function checkGpa(gpa) {
@@ -31,5 +31,5 @@ function testArguments(){
 }
 // you can loop over the length of the arguments. arguments being everything given to the function even with no specific
 // variable?
-let test = testArguments(1,2,3,4,5,5,6,7,9)
-console.log(test)
+let test = testArguments(1,2,3,4,5,5,6,7,9);
+console.log(test);
