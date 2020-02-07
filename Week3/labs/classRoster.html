@@ -83,11 +83,16 @@
 
     addButton.addEventListener('click',function () {
 
+        let nameSelector = document.querySelector('#student-name');
+        let idSelector = document.querySelector('#student-id');
+        let gpaSelector = document.querySelector('#student-gpa');
         // selecting and getting the value form all the input fields
-        let studentName = document.querySelector('#student-name').value;
-        let studentId  = document.querySelector('#student-id').value;
-        let studentGpa = document.querySelector('#student-gpa').value;
+        let studentName = nameSelector.value;
+        let studentId  = idSelector.value;
+        let studentGpa = gpaSelector.value;
+
         let counter = document.querySelector("#student-list").children.length; //getting number of child elements under the list element
+
 
         // maybe separate this into functions if this was a standalone js file?
         let nameError = 'ENTER NAME';
@@ -125,8 +130,8 @@
             // setting the value to the amount of current students in the list
             studentCount.innerHTML = `${counter + 1}`;
 
-            resetValues(studentName,studentId,studentGpa);
-            studentName.value = '';
+            //calling function that clears the fields
+            clearFields(nameSelector,idSelector,gpaSelector);
 
         }
     });
@@ -141,11 +146,13 @@
         let counter = document.querySelector("#student-list").children.length;
         // getting number of child elements under the list element
         studentCount.innerHTML = `${counter}`;
-    })
+    });
 
-    function resetValues(val1,val2,val3) {
+    function clearFields(val1, val2, val3) {
+        // adding all the values to an array
         let values = [val1,val2,val3];
 
+        //looping over values and clearing them
         values.forEach(function (value) {
             value.value = '';
         })
