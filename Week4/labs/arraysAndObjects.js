@@ -88,10 +88,10 @@ cats_and_owners.forEach(function (obj) {
 Source http://api.nobelprize.org/v1/prize.json?year=2017
 * */
 
-// TODO print the full name of the Literature Nobel laureate.
-// TODO print the ids of each of the Physics Nobel laureates. Your code should still work without modification if a laureate was added, or removed.
-// TODO write code to print the names of all of the prize categories (So your output would start physics, chemistry, medicine... ).
-// TODO write code to print the total number of prize categories
+//  print the full name of the Literature Nobel laureate.
+//  print the ids of each of the Physics Nobel laureates. Your code should still work without modification if a laureate was added, or removed.
+//  write code to print the names of all of the prize categories (So your output would start physics, chemistry, medicine... ).
+//  write code to print the total number of prize categories
 // TODO write code to count the total number of laureates from 2017.
 //   have a good look at how the JSON is structured, and think about what loop(s) you'll need to write.
 
@@ -223,6 +223,24 @@ let nobel_prize_winners_2017 = {
 
 let litPrize = nobel_prize_winners_2017.prizes[2].laureates[0];
 console.log(`Full Name: ${litPrize.firstname} ${litPrize.surname}`);
+
+let prizes = nobel_prize_winners_2017.prizes;
+
+prizes.forEach(function (category) {
+    if (category.category === "chemistry"){
+        for (let p in category.laureates)
+            console.log(category.laureates[p].id)
+    }
+});
+
+prizes.forEach(function (category) {
+    console.log(category.category)
+
+});
+
+console.log(prizes.length);
+
+
 
 
 
