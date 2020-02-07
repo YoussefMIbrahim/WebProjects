@@ -20,8 +20,9 @@ let iss_location = {
 //  Extract the latitude value, and log it to the console.
 //  Extract the longitude value, and log it to the console.
 
-console.log(iss_location["iss_position"]["latitude"]);
-console.log(iss_location["iss_position"]["longitude"]);
+// printing the long and lat from the obj
+console.log(`\nLatitude: ${iss_location["iss_position"]["latitude"]}`);
+console.log(`Longitude: ${iss_location["iss_position"]["longitude"]}`);
 
 
 /* b. Use this JavaScript object of exchange rates relative to Euros.
@@ -42,20 +43,25 @@ let rates = {
 //      the equivalent value in Australian Dollars (AUD)
 //  write code to identify the currency symbol that has the highest exchange rate compared to Euros.
 //    In other words, identify the property with the largest value. the answer is BRL (Brazilian Real) at 3.8959 BRL to 1 Euro.
+
+// adding a new value to above object
 rates.CHF = 1.1787;
-console.log(rates);
+
+// getting 100 EUR in AUD
 howMuchMoneyDoIHaveInAUD = 100 * rates.AUD;
-console.log(howMuchMoneyDoIHaveInAUD);
+// printing my AUd value
+console.log(`\n100$ in AUD: ${howMuchMoneyDoIHaveInAUD}`);
 
-max = -Infinity;
-
+// declaring -infinity which is the lowest possible value i believe
+ let max = -Infinity;
+// looping over and assigning max to a higher value if found
 for (let rate in rates){
     if (rates[rate] > max){
         max = rates[rate];
     }
 }
-
-console.log(max);
+// printing the highest rate
+console.log(`\nHighest exchange rate: ${max}`);
 
 
 
@@ -74,10 +80,13 @@ let cats_and_owners = [
 //  Taylor Swift's cat is called 'Meredith'. Write code to add this data to the array.
 //  write a loop to print each cat owner, and their cat's name, one per line. Use the forEach style.
 
-console.log(cats_and_owners[1].cat);
+// printing Gary Oldman's cat name
+console.log(`\nGary Oldman\'s cat name: ${cats_and_owners[1].cat}`);
 
+//adding a new cat to the array abjects
 cats_and_owners.push({name: 'Taylor Swift', cat: 'Meredith'});
-
+//looping over array and printing everything in it
+console.log('\nNames of Cats and their owners: \n');
 cats_and_owners.forEach(function (obj) {
     console.log(`Name: ${obj.name} Cat: ${obj.cat}`)
 });
@@ -92,7 +101,7 @@ Source http://api.nobelprize.org/v1/prize.json?year=2017
 //  print the ids of each of the Physics Nobel laureates. Your code should still work without modification if a laureate was added, or removed.
 //  write code to print the names of all of the prize categories (So your output would start physics, chemistry, medicine... ).
 //  write code to print the total number of prize categories
-// TODO write code to count the total number of laureates from 2017.
+//  write code to count the total number of laureates from 2017.
 //   have a good look at how the JSON is structured, and think about what loop(s) you'll need to write.
 
 
@@ -221,11 +230,14 @@ let nobel_prize_winners_2017 = {
     ]
 };
 
+// getting full name of literature prize guy
 let litPrize = nobel_prize_winners_2017.prizes[2].laureates[0];
-console.log(`Full Name: ${litPrize.firstname} ${litPrize.surname}`);
-
+console.log(`\nFull Name for Literature prize: ${litPrize.firstname} ${litPrize.surname}`);
+// assigning a variable to all the prizes
 let prizes = nobel_prize_winners_2017.prizes;
 
+console.log('\nIDs for Chemistry dudes');
+// looping over all the prizes and printing all the ids of people in the chemistry category
 prizes.forEach(function (category) {
     if (category.category === "chemistry"){
         for (let p in category.laureates)
@@ -233,12 +245,23 @@ prizes.forEach(function (category) {
     }
 });
 
+console.log('\nList of Categories: ');
+// looping over prizes and printing all category names
 prizes.forEach(function (category) {
     console.log(category.category)
-
 });
 
-console.log(prizes.length);
+console.log(`\nNumber of prizes: ${prizes.length}`);
+// making empty variable to hold the total
+let laureatesTotal = 0;
+//looping over all the categories and adding to the total
+prizes.forEach(function (prize) {
+    for (let laur in prize.laureates){
+        laureatesTotal++
+    }
+});
+
+console.log(`Laureates Total: ${laureatesTotal}`);
 
 
 
