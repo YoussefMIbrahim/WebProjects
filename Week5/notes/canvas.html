@@ -9,16 +9,20 @@
 <canvas id = "canvas" height = "200" width = "300"> </canvas>
 
 <script>
-    let canvas = document.getElementById("canvas");
-    let context = canvas.getContext("2d");
+    let canvas = document.getElementById("canvas"); // getting canvas from the HTML
+    let context = canvas.getContext("2d"); // tbd
     // context.fillRect(20,20,100,100);
     // context.strokeRect(150,20,100,100);
 
-    context.beginPath();
+    context.beginPath(); // begining th path for the circle
 
-    context.arc(100, 65, 50, 0, 2 * Math.PI);
+    context.arc(100, 65, 50, 0, 2 * Math.PI); // creating the arc of the circle
 
-    context.stroke()
+    context.stroke(); // drawing the circle
+
+    context.fillStyle = "#000FF"; //  setting the color for the font
+    context.font = "50px Arial"; // setting the font size and type
+    context.fillText("Big Blue Fill", 30 ,90); // filling  the text and the x/y positioning
 
 </script>
 </body>
