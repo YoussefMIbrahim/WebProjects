@@ -21,6 +21,8 @@
 
 <br><input type="text" id="color">
 <button id="color_select">press me</button>
+<br><input type="text" id="size">
+<button id="clear">clear everything</button>
 
 <script>
 
@@ -28,6 +30,9 @@
     var context = canvas.getContext("2d");
     let color = 'Black';
     let button = document.querySelector('#color_select');
+    let size = 8;
+    let clear_button = document.querySelector("#clear");
+
 
 
 
@@ -41,6 +46,15 @@
         mousedown = false
     });
 
+    button.addEventListener("click",function () {
+        color = document.querySelector("#color").value;
+        size = document.querySelector("#size").value;
+        context.fillStyle = color;
+    });
+
+    clear_button.addEventListener("click", function () {
+        context.clearRect(0,0,400,400);
+    });
 
     canvas.addEventListener("mousemove", function() {
 
@@ -51,13 +65,10 @@
         var x = event.offsetX;
         var y = event.offsetY;   //offsetX, offsetY, may not work in older browsers
 
-        button.addEventListener("click",function () {
-            color = document.querySelector("#color").value;
-            context.fillStyle = color;
-        });
+
 
         context.beginPath();
-        context.arc(x-5, y-5,8,0,2*Math.PI);
+        context.arc(x-5, y-5,size,0,2*Math.PI);
 
         context.fill();
         context.stroke();
