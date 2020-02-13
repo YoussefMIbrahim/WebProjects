@@ -19,10 +19,17 @@
 <P>Click the mouse on the canvas</P>
 <canvas id="canvas" height="400" width="400"></canvas>
 
+<br><input type="text" id="color">
+<button id="color_select">press me</button>
+
 <script>
 
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext("2d");
+    let color = 'Black';
+    let button = document.querySelector('#color_select');
+
+
 
     var mousedown = false;
 
@@ -34,6 +41,7 @@
         mousedown = false
     });
 
+
     canvas.addEventListener("mousemove", function() {
 
         if (!mousedown) { return; }
@@ -43,12 +51,14 @@
         var x = event.offsetX;
         var y = event.offsetY;   //offsetX, offsetY, may not work in older browsers
 
-        //Draw a filled rectangle centered under the mouse click
-        //x, y is the top left corner, so shift up and left by 5 to center it under the mouse.
-        // context.fillRect(x-5, y-5, 10, 10);
+        button.addEventListener("click",function () {
+            color = document.querySelector("#color").value;
+            context.fillStyle = color;
+        });
+
         context.beginPath();
         context.arc(x-5, y-5,8,0,2*Math.PI);
-        context.fillStyle = 'Blue';
+
         context.fill();
         context.stroke();
 
