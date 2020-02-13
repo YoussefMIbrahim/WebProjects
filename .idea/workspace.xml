@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7f1c883-b05d-4c32-aebd-fe59691c93ca" name="Default Changelist" comment="" />
+    <list default="true" id="f7f1c883-b05d-4c32-aebd-fe59691c93ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Week5/notes/canvas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -76,6 +79,11 @@
       <workItem from="1580919888965" duration="161000" />
       <workItem from="1580920072089" duration="3019000" />
       <workItem from="1580933635583" duration="2684000" />
+      <workItem from="1581092399822" duration="635000" />
+      <workItem from="1581099636430" duration="4000" />
+      <workItem from="1581107145846" duration="830000" />
+      <workItem from="1581555248665" duration="10000" />
+      <workItem from="1581555278924" duration="897000" />
     </task>
     <servers />
   </component>
