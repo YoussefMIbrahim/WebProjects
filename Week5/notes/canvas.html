@@ -11,8 +11,14 @@
 <script>
     let canvas = document.getElementById("canvas");
     let context = canvas.getContext("2d");
-    context.fillRect(20,20,100,100);
-    context.strokeRect(150,20,100,100);
+    // context.fillRect(20,20,100,100);
+    // context.strokeRect(150,20,100,100);
+
+    context.beginPath();
+
+    context.arc(100, 65, 50, 0, 2 * Math.PI);
+
+    context.stroke()
 
 </script>
 </body>
