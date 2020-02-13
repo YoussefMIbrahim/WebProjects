@@ -20,5 +20,6 @@ input.addEventListener("input", function () {
     context.drawImage(image,0,0);
     context.font = "40px Arial";
     context.fillStyle = "Black";
+    context.fillText(text,30 ,100)
 
 });
