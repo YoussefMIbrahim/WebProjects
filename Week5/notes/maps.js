@@ -43,7 +43,7 @@ campuses = [
 ];
 
 campuses.forEach(function (campus) {
-    let coordinates = campus['coordinates']
+    let coordinates = campus['coordinates'];
     let marker = L.marker(coordinates)
         .bindPopup(`${campus['name']} <br> <a href = '${campus['website']}'>Website</a>`)
         .addTo(map);

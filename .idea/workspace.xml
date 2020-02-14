@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7f1c883-b05d-4c32-aebd-fe59691c93ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week5/notes/flickity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week5/notes/chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week5/notes/helloCharts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week5/notes/highlights!.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webClient.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week5/notes/maps.js" beforeDir="false" afterPath="$PROJECT_DIR$/Week5/notes/maps.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -88,7 +91,7 @@
       <workItem from="1581107145846" duration="830000" />
       <workItem from="1581555248665" duration="10000" />
       <workItem from="1581555278924" duration="5738000" />
-      <workItem from="1581624220756" duration="15032000" />
+      <workItem from="1581624220756" duration="17411000" />
     </task>
     <servers />
   </component>
@@ -100,10 +103,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="416" y="113" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1579883672054" />
-    <state x="187" y="0" key="SettingsEditor" timestamp="1581642886546">
+    <state x="187" y="0" key="SettingsEditor" timestamp="1581646017036">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1581642886546" />
+    <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1581646017036" />
     <state x="347" y="160" key="run.anything.popup" timestamp="1579896269808">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
