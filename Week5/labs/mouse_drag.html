@@ -22,20 +22,21 @@
 <canvas id="canvas" height="400" width="400"></canvas>
 
 <br><input type="color" id="color">
-<button id="color_select">press me</button>
-<br><input type="range" id="size">
-<button id="clear">clear everything</button>
+<button id="color_select">Change Color</button>
+<br><input type="range" id="size" min="0" max="25">
+<button id="size_select">Change Size</button>
+
+<br><button id="clear">clear everything</button>
 
 <script>
-
+    // setting variables for elements im getting from the html
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext("2d");
-    let color = 'Black';
-    let button = document.querySelector('#color_select');
-    let size = 8;
+    let circle_color = 'Black'; // setting ddefault color value to black
+    let change_color = document.querySelector('#color_select');
+    let change_size = document.querySelector('#size_select');
+    let circle_size = 8; // changing default circle size to 8
     let clear_button = document.querySelector("#clear");
-
-
 
 
     var mousedown = false;
@@ -47,14 +48,19 @@
     canvas.addEventListener("mouseup", function() {
         mousedown = false
     });
-
-    button.addEventListener("click",function () {
-        color = document.querySelector("#color").value;
-        size = document.querySelector("#size").value;
-        context.fillStyle = color;
+    // adding a click event listener for the change color button
+    change_color.addEventListener("click",function () {
+        // getting the new change color value from the html
+        circle_color = document.querySelector("#color").value;
     });
-
+    // adding a click event listener for the change size button
+    change_size.addEventListener("click", function () {
+        // getting the new size value from the html
+        circle_size = document.querySelector("#size").value;
+    });
+    // listener for clear everything button
     clear_button.addEventListener("click", function () {
+        // clearing everything in the canvas (should probably have a better way to put the heigh and width than hardcoding)
         context.clearRect(0,0,400,400);
     });
 
@@ -68,10 +74,13 @@
         var y = event.offsetY;   //offsetX, offsetY, may not work in older browsers
 
 
-
+        // beginning the circle path
         context.beginPath();
-        context.arc(x-5, y-5,size,0,2*Math.PI);
-
+        // making the circle
+        context.arc(x-5, y-5,circle_size,0,2*Math.PI);
+        // setting the fill color
+        context.fillStyle = circle_color;
+        // filling the circle
         context.fill();
 
     })
