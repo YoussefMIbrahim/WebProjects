@@ -30,3 +30,28 @@ bridges.forEach(function (bridge) {
        .bindPopup(`${bridge['name']}, ${bridge['cit/state']} <br> Span: ${bridge['span']}`)
        .addTo(map)
 });
+
+let canvas = document.querySelector('#bridge-chart');
+let ctx = canvas.getContext('2d');
+
+chart = new Chart(ctx,{
+   type:'bar',
+   data:{
+       labels:[bridges[0].name,bridges[1].name,bridges[2].name,bridges[3].name,bridges[4].name],
+       datasets:[{
+           label:'Span',
+           data:[bridges[0].span,bridges[1].span,bridges[2].span,bridges[3].span,bridges[4].span],
+           backgroundColor:['Red','Green','Blue','Yellow','Purple']
+       }]
+   },
+   options:{
+       scales:{
+           yAxes:[{
+               ticks:{
+                   beginAtZero:true
+               }
+           }]
+       }
+   }
+});
+
