@@ -34,17 +34,17 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 //     .bindPopup("Normandale Collage <br> <a href = ''https://normandale.edu'>Website</a>")
 //     .addTo(map);
 
-campuses = [
-    {'name': 'Minneapolis College', 'website': 'https://minneapolis.edu', 'coordinates': [44.9724, -93.2844] },
-    {'name': 'Saint Paul College', 'website': 'https://saintpaul.edu', 'coordinates': [44.94839, -93.1099] },
-    {'name': 'Normandale Community College', 'website': 'https://normandale.edu', 'coordinates': [44.8297, -93.3312] },
-    {'name': 'North Hennepin Community College', 'website': 'https://nhcc.edu', 'coordinates': [45.1054232,-93.3767558] },
-    {'name': 'Century College', 'website': 'https://century.edu', 'coordinates': [45.043894, -92.9862026] },
-];
-
-campuses.forEach(function (campus) {
-    let coordinates = campus['coordinates'];
-    let marker = L.marker(coordinates)
-        .bindPopup(`${campus['name']} <br> <a href = '${campus['website']}'>Website</a>`)
-        .addTo(map);
-});
+// campuses = [
+//     {'name': 'Minneapolis College', 'website': 'https://minneapolis.edu', 'coordinates': [44.9724, -93.2844] },
+//     {'name': 'Saint Paul College', 'website': 'https://saintpaul.edu', 'coordinates': [44.94839, -93.1099] },
+//     {'name': 'Normandale Community College', 'website': 'https://normandale.edu', 'coordinates': [44.8297, -93.3312] },
+//     {'name': 'North Hennepin Community College', 'website': 'https://nhcc.edu', 'coordinates': [45.1054232,-93.3767558] },
+//     {'name': 'Century College', 'website': 'https://century.edu', 'coordinates': [45.043894, -92.9862026] },
+// ];
+//
+// campuses.forEach(function (campus) {
+//     let coordinates = campus['coordinates'];
+//     let marker = L.marker(coordinates)
+//         .bindPopup(`${campus['name']} <br> <a href = '${campus['website']}'>Website</a>`)
+//         .addTo(map);
+// });
