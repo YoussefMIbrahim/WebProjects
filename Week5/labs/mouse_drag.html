@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Events</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+    <style>
+
+        #canvas {
+            border: 1px black solid;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<P>Click the mouse on the canvas</P>
+<canvas id="canvas" height="400" width="400"></canvas>
+
+<br><input type="color" id="color">
+<button id="color_select">Change Color</button>
+<br><input type="range" id="size" min="0" max="25">
+<button id="size_select">Change Size</button>
+
+<br><button id="clear">clear everything</button>
+
+<script>
+    // setting variables for elements im getting from the html
+    var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
+    let circle_color = 'Black'; // setting ddefault color value to black
+    let change_color = document.querySelector('#color_select');
+    let change_size = document.querySelector('#size_select');
+    let circle_size = 8; // changing default circle size to 8
+    let clear_button = document.querySelector("#clear");
+
+
+    var mousedown = false;
+
+    canvas.addEventListener("mousedown", function() {
+        mousedown = true
+    });
+
+    canvas.addEventListener("mouseup", function() {
+        mousedown = false
+    });
+    // adding a click event listener for the change color button
+    change_color.addEventListener("click",function () {
+        // getting the new change color value from the html
+        circle_color = document.querySelector("#color").value;
+    });
+    // adding a click event listener for the change size button
+    change_size.addEventListener("click", function () {
+        // getting the new size value from the html
+        circle_size = document.querySelector("#size").value;
+    });
+    // listener for clear everything button
+    clear_button.addEventListener("click", function () {
+        // clearing everything in the canvas (should probably have a better way to put the heigh and width than hardcoding)
+        context.clearRect(0,0,400,400);
+    });
+
+    canvas.addEventListener("mousemove", function() {
+
+        if (!mousedown) { return; }
+
+        // event is a built-in variable, contains the event that triggered this function
+        // get the x, y location of the event
+        var x = event.offsetX;
+        var y = event.offsetY;   //offsetX, offsetY, may not work in older browsers
+
+
+        // beginning the circle path
+        context.beginPath();
+        // making the circle
+        context.arc(x-5, y-5,circle_size,0,2*Math.PI);
+        // setting the fill color
+        context.fillStyle = circle_color;
+        // filling the circle
+        context.fill();
+
+    })
+
+</script>
+
+</body>
+</html>
