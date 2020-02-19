@@ -10,9 +10,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -20,14 +20,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Woyfvmx1kvUX0Rgt2tZ55K6qoi" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -36,10 +41,25 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Week5/labs" />
       <recent name="$PROJECT_DIR$/Week3/labs" />
       <recent name="$PROJECT_DIR$/Week2/images" />
       <recent name="$PROJECT_DIR$/Week2/labs" />
     </key>
+  </component>
+  <component name="RunManager" selected="Node.js.chart.js">
+    <configuration name="MNMaps.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebClient/Week5/notes/MNMaps.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="chart.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Week5/notes/chart.js" working-dir="$PROJECT_DIR$/Week5/notes">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.chart.js" />
+        <item itemvalue="JavaScript Debug.MNMaps.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -76,28 +96,65 @@
       <workItem from="1580919888965" duration="161000" />
       <workItem from="1580920072089" duration="3019000" />
       <workItem from="1580933635583" duration="2684000" />
+      <workItem from="1581092399822" duration="635000" />
+      <workItem from="1581099636430" duration="4000" />
+      <workItem from="1581107145846" duration="830000" />
+      <workItem from="1581555248665" duration="10000" />
+      <workItem from="1581555278924" duration="5738000" />
+      <workItem from="1581624220756" duration="18013000" />
+      <workItem from="1581881229164" duration="7381000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="416" y="113" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579883672054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="416" y="113" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1579883672054" />
+<<<<<<< HEAD
     <state x="187" y="0" key="SettingsEditor" timestamp="1581012647064">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1581012647064" />
+=======
+    <state width="1345" height="173" key="GridCell.Tab.0.bottom" timestamp="1581893731562">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="173" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581893731562" />
+    <state width="1345" height="173" key="GridCell.Tab.0.center" timestamp="1581893731561">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="173" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581893731561" />
+    <state width="1345" height="173" key="GridCell.Tab.0.left" timestamp="1581893731560">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="173" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581893731560" />
+    <state width="1345" height="173" key="GridCell.Tab.0.right" timestamp="1581893731562">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="173" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581893731562" />
+    <state x="187" y="0" key="SettingsEditor" timestamp="1581646017036">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1581646017036" />
+    <state x="0" y="0" width="791" height="728" key="find.popup" timestamp="1581883949698">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" width="791" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1581883949698" />
+>>>>>>> master
     <state x="347" y="160" key="run.anything.popup" timestamp="1579896269808">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="347" y="160" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1579896269808" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1579891312572">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581883935555">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1579891312572" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1581883935555" />
   </component>
 </project>

@@ -65,13 +65,17 @@
     let treeTypeSelect = document.querySelector('#tree-type');
     let stateInput = document.querySelector('#state');
     let cityInput = document.querySelector('#city');
-
+    let zipInpute = document.querySelector('#zipcode');
+    let summary = document.querySelector('#order-summary');
     //  create a variable for city input element
     //  create a variable for zip code input element
 
     let submitButton = document.querySelector('#submit-order');
 
+<<<<<<< HEAD
     let orderSummaryParagraph = document.querySelector('#order-summary');
+=======
+>>>>>>> master
     submitButton.addEventListener('click', function() {
 
         let name = homeownerNameInput.value;
@@ -80,32 +84,69 @@
         let treeType = treeTypeSelect.value;
         let city = cityInput.value;
         let state = stateInput.value;
+        let zipCode = zipInpute.value;
+
+        // empty array that will hold my errors
+        let errors = [];
+
+        // running validation function to check if there's input
+        if (!validate(name)){errors.push('Please enter a name')}
+        if (!validate(houseNumber)){errors.push('Please enter a House Number')}
+        if (!validate(streetName)){errors.push('Please enter Street Name')}
+        if (!validate(treeType)){errors.push('Please enter a tree type')}
+        if (!validate(city)){errors.push('Please enter a city name')}
+        if (!validate(state)){errors.push('Please enter a state')}
+        // different if statement here because this one is unique
+        if (!zipCode || (zipCode <55001 || zipCode > 56763)){
+            errors.push('Please enter a valid zipcode');
+        }
+        // checking there's an error message and running my code otherwise
+        if (errors.length > 0){
+            alert(errors.join('\n'));
+            return
+        }else{
+
+        }
 
         //  get the value from the input#city
         //  get the value from the input#zipcode
 
-        // TODO Validate that all six input and select elements have been completed
+        //  Validate that all six input and select elements have been completed
 
+<<<<<<< HEAD
 
 
         // TODO Validate the zipcode is in the range 55001 and 56763 (which checks that the zip code is in Minnesota)
+=======
+        //  Validate the zipcode is in the range 55001 and 56763 (which checks that the zip code is in Minnesota)
+>>>>>>> master
 
-        let errors = []
+        
 
         
         // If a form element has not been completed, add an error message to the errors array (use push)
 
 
-        // TODO - If there are any errors after checking all of the elements,
+        //  - If there are any errors after checking all of the elements,
         // display an alert with all of the error messages (use join)
         // and then return from this function to prevent further processing
 
 
-        // TODO - If there are no errors, use a template string to display an order summary in the order summary paragraph
+        //  - If there are no errors, use a template string to display an order summary in the order summary paragraph
+            // setting the inner html of the summary to the inputs we got from the user
+            summary.innerHTML = `Name: ${name} House Number: ${houseNumber} Street Name: ${streetName} Tree Type ${treeType}
+            City: ${city} State: ${state} ZipCode: ${zipCode}`
 
 
-    })
+    });
 
+    // function that returns false if passed value is empty otherwise it returns true
+    function validate(value) {
+        if (!value){
+            return false
+        }
+        return true
+    }
 
 
 </script>
