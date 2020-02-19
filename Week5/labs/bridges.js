@@ -25,7 +25,6 @@ let bridgeIcon = L.icon({
     iconUrl: "bridge.png",
 
     iconSize:[30,30],
-    iconAnchor:[0,0]
 
 });
 // looping over the bridges array
