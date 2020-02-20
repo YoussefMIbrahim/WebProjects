@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7f1c883-b05d-4c32-aebd-fe59691c93ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week6/notes/fetch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week6/notes/iss_location.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week6/notes/iss_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week6/notes/whatTimeIsIt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webClient.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week6/notes/iss_icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week6/notes/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/Week6/notes/fetch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week6/notes/iss_location.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week6/notes/iss_location.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +109,7 @@
       <workItem from="1581624220756" duration="18013000" />
       <workItem from="1581881229164" duration="7381000" />
       <workItem from="1582124443689" duration="2711000" />
-      <workItem from="1582220736552" duration="2572000" />
+      <workItem from="1582220736552" duration="6369000" />
     </task>
     <servers />
   </component>
