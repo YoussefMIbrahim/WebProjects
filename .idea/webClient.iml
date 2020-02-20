@@ -7,5 +7,6 @@
     <orderEntry type="library" name="@types/leaflet" level="application" />
     <orderEntry type="library" name="@types/flickity" level="application" />
     <orderEntry type="library" name="@types/chart.js" level="application" />
+    <orderEntry type="library" name="@types/jquery" level="application" />
   </component>
 </module>

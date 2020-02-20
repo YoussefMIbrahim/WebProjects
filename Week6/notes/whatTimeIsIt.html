@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What's The Time Here?</title>
+</head>
+<body>
+
+    <h1>What time is it?</h1>
+
+    <p id="time"></p>
+
+    <script>
+        let timeElement = document.querySelector('#time');
+
+        // calls the function on a set interval
+
+        // setInterval(function () {
+        //     timeElement.innerHTML = Date();
+        // },5000) //update intreval 5 seconds
+
+        setInterval(() =>{
+            timeElement.innerHTML = Date();
+        },1000)
+    </script>
+</body>
+</html>
