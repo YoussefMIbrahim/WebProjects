@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7f1c883-b05d-4c32-aebd-fe59691c93ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Week7/Hello_vue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week7/userInputVue.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,9 +14,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -43,6 +45,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Week6/labs" />
       <recent name="$PROJECT_DIR$/Week5/labs" />
       <recent name="$PROJECT_DIR$/Week3/labs" />
       <recent name="$PROJECT_DIR$/Week2/images" />
@@ -106,7 +109,8 @@
       <workItem from="1581624220756" duration="18013000" />
       <workItem from="1581881229164" duration="7381000" />
       <workItem from="1582124443689" duration="2711000" />
-      <workItem from="1582220736552" duration="12194000" />
+      <workItem from="1582220736552" duration="12395000" />
+      <workItem from="1582250101853" duration="4168000" />
     </task>
     <servers />
   </component>
