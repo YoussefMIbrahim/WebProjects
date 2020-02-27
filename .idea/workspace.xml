@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7f1c883-b05d-4c32-aebd-fe59691c93ca" name="Default Changelist" comment="" />
+    <list default="true" id="f7f1c883-b05d-4c32-aebd-fe59691c93ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Week7/shoppingCart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -48,8 +51,14 @@
       <recent name="$PROJECT_DIR$/Week2/labs" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.chart.js">
+  <component name="RunManager" selected="JavaScript Debug.userInputVue.html">
+    <configuration name="Hello_vue.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebClient/Week7/Hello_vue.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="MNMaps.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebClient/Week5/notes/MNMaps.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="userInputVue.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebClient/Week7/userInputVue.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="chart.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Week5/notes/chart.js" working-dir="$PROJECT_DIR$/Week5/notes">
@@ -57,6 +66,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.userInputVue.html" />
+        <item itemvalue="JavaScript Debug.Hello_vue.html" />
         <item itemvalue="Node.js.chart.js" />
         <item itemvalue="JavaScript Debug.MNMaps.html" />
       </list>
@@ -107,7 +118,7 @@
       <workItem from="1582124443689" duration="2711000" />
       <workItem from="1582220736552" duration="12395000" />
       <workItem from="1582250101853" duration="4168000" />
-      <workItem from="1582770589970" duration="320000" />
+      <workItem from="1582770589970" duration="2704000" />
     </task>
     <servers />
   </component>
