@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Where's My ISS</title>
+<!--    async means load script in parallel with html
+        defer means wait for the html to finish loading before running the script-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
+    <script async defer src = "fetch.js"></script>
+    <link rel="stylesheet" href="iss_style.css" type="text/css">
+
+</head>
+<body>
+
+    <h1>Where is the international space station</h1>
+
+    <div>
+        <p>This page will update every 10 seconds</p>
+        <p>At <span id="update-time"></span>the ISS is over the following coordinates</p>
+        <p>ISS latitude: <span id="iss-lat"></span> </p>
+        <p>ISS longitude <span id="iss-long"></span> </p>
+    </div>
+    <div id="iss-map">
+
+    </div>
+
+</body>
+</html>

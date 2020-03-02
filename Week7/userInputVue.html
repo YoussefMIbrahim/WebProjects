@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>I wanna get your input</title>
+</head>
+<body>
+
+    <div id="app">
+        <h1>Hello Vue</h1>
+        <label for="name">Please enter your name: </label>
+        <input type="name" v-model= "name">
+        <p v-if="name">
+            your name is {{ name }}
+        </p>
+    </div>
+
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data: {
+                name:""
+            },
+        })
+    </script>
+</body>
+</html>
