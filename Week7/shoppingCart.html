@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-
+<!--    div tag that will be the vue template -->
     <div id="app">
         <h1>Example Shopping Cart</h1>
 
@@ -20,9 +20,12 @@
             <tr><th>Item</th><th>Unit Price</th><th>Quantity</th><th>Total</th></tr>
 
             <tr>
+<!--                moustache operators with data stored in them that will be replaced with the vue data-->
                 <td>{{ name }}</td>
                 <td>{{ unitPrice }}</td>
+<!--                v-model binds the value here with the value in vue so any changes done to either will affect the other-->
                 <td><input type="number" id="quantity" v-model="quantity"> </td>
+<!--                calling the total computed function and filtering it to 2 decimal places-->
                 <td id="total">${{ total | decimalPlaces(2) }}</td>
             </tr>
         </table>
@@ -31,7 +34,9 @@
 
     <script>
         let app = new Vue({
+            // selecting the element for the vue template
             el: '#app',
+            // where wer store all the data used
             data: {
                 name: 'Hat',
                 quantity: 1,
@@ -39,11 +44,14 @@
 
             },
             computed: {
+                // function that returns the total by multiplying price and quantity
                 total: function () {
                     return this.quantity * this.unitPrice
                 }
             },
+
             filters: {
+                // function that takes a number and returns it with a fixed number of decimal places
                 decimalPlaces: function (price, decimalPlaces) {
                     return price.toFixed(decimalPlaces)
                 }

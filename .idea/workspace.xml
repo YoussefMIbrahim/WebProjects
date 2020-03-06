@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f7f1c883-b05d-4c32-aebd-fe59691c93ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week5/notes/canvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week5/notes/canvas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week7/Hello_vue.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week7/Hello_vue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week7/shoppingCart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week7/shoppingCart.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +52,14 @@
       <recent name="$PROJECT_DIR$/Week2/labs" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.userInputVue.html">
+  <component name="RunManager" selected="JavaScript Debug.longest_Bridges.html">
     <configuration name="Hello_vue.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebClient/Week7/Hello_vue.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="MNMaps.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebClient/Week5/notes/MNMaps.html" useBuiltInWebServerPort="true">
+    <configuration name="iss_location.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebClient/Week6/labs/iss_location.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="longest_Bridges.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebClient/Week5/labs/longest_Bridges.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="userInputVue.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebClient/Week7/userInputVue.html" useBuiltInWebServerPort="true">
@@ -67,10 +70,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.longest_Bridges.html" />
+        <item itemvalue="JavaScript Debug.iss_location.html" />
         <item itemvalue="JavaScript Debug.userInputVue.html" />
         <item itemvalue="JavaScript Debug.Hello_vue.html" />
         <item itemvalue="Node.js.chart.js" />
-        <item itemvalue="JavaScript Debug.MNMaps.html" />
       </list>
     </recent_temporary>
   </component>
@@ -120,6 +124,7 @@
       <workItem from="1582220736552" duration="12395000" />
       <workItem from="1582250101853" duration="4168000" />
       <workItem from="1582770589970" duration="8119000" />
+      <workItem from="1583432566806" duration="3794000" />
     </task>
     <servers />
   </component>

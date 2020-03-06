@@ -6,25 +6,29 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-
+<!--    start of vue template-->
     <div id="app">
         <h1>Hello Vue</h1>
         <p>
             {{message | uppercase}}
         </p>
-
+<!--        setting an on click function to thos button-->
         <button v-on:click="addExclamation">Add !</button>
     </div>
 
     <script>
         let app = new Vue({
+            // getting template by id
             el: '#app',
             data:{
+                // data for the message and an empty exclamation variable
                 message:'hi',
                 exclamation:0,
             },
             methods:{
+                // making the function for adding exclamation that i attached tot he html button
                 addExclamation: function () {
+                    // checking if the number of exclamations has reached 10 if not adding one and adding to the counter
                     if (this.exclamation < 10) {
 
                         this.message = this.message + '!';
@@ -33,6 +37,7 @@
                 }
             },
             filters: {
+                // function that takes a string and turns it all to uppercase
                 uppercase: function (string) {
                     return string.toUpperCase()
                 }
