@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Would you Rather?</title>
+    <script src="https://unpkg.com/vue@2.6.7/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <h1>Would you Rather...</h1>
+
+        <would-you-rather-question
+        v-bind:question="question"
+        v-bind:answer1="answer1"
+        v-bind:answer2="answer2"
+        v-on:answer-changed="answerChanged">
+
+        </would-you-rather-question>
+
+        {{userSelectionMessage}}
+
+
+    </div>
+
+<script>
+
+    const WouldYouRatherQuestionComponent = {
+        template: `
+        <div>
+            <h2>{{ question }}</h2>
+
+            <input type="radio" v-model="choice" v-bind:value="answer1" v-on:change="$emit('answer-changed', choice)">
+            <label>{{ answer1 }}</label>
+            <input type="radio" v-model="choice" v-bind:value="answer2" v-on:change="$emit('answer-changed', choice)">
+            <label>{{ answer2 }}</label>
+        </div>
+        `,
+        data(){
+            return{
+                choice: ''
+            }
+        },
+        props: {
+            question: String,
+            answer1: String,
+            answer2: String
+        }
+    }
+
+    let app = new Vue({
+        el: "#app",
+        data(){
+            return {
+                question: 'live in a house shaped like a circle or a house shaped like a triangle?',
+                answer1: 'circle',
+                answer2: ' Triangle',
+                userSelectionMessage: ''
+            }
+        },
+        methods: {
+            answerChanged(answer) {
+                console.log('event emitted from child')
+                this.userSelectionMessage = `thanks you selected ${answer}`
+            }
+        },
+        components: {
+            'would-you-rather-question' : WouldYouRatherQuestionComponent
+        }
+    })
+
+</script>
+
+</body>
+
+</html>
