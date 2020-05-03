@@ -50,8 +50,11 @@
       <recent name="$PROJECT_DIR$/Week2/labs" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.longest_Bridges.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="Hello_vue.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebClient/Week7/Hello_vue.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebClient/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="iss_location.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebClient/Week6/labs/iss_location.html" useBuiltInWebServerPort="true">
@@ -63,16 +66,13 @@
     <configuration name="userInputVue.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebClient/Week7/userInputVue.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="chart.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Week5/notes/chart.js" working-dir="$PROJECT_DIR$/Week5/notes">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.longest_Bridges.html" />
         <item itemvalue="JavaScript Debug.iss_location.html" />
         <item itemvalue="JavaScript Debug.userInputVue.html" />
         <item itemvalue="JavaScript Debug.Hello_vue.html" />
-        <item itemvalue="Node.js.chart.js" />
       </list>
     </recent_temporary>
   </component>
